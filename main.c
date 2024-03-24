@@ -181,7 +181,7 @@ char** breakInto512BitChunks(const char* inputString, size_t* numChunks) {
 }
 
 int main() {
-    /*const char *inputString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";*/
+    // Below is some random message
     const char* inputString = "fishhello hello hello world my love 3029 fishhello hello hello world my love 3029 fishhello hello hello world my love 3029";
     size_t numChunks;
     char** chunks = breakInto512BitChunks(inputString, &numChunks);
