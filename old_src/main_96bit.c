@@ -2,6 +2,7 @@
 // Date created: Friday, 22 March, 2024
 // Copyright (c) 2024 nicklaus yap ken yik (nicklausyap)
 // This is the shorten-version which only output 96 bit hash
+// version 1.0
 
 #pragma warning(disable : 4996)
 #include <stdio.h>
