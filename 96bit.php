@@ -28,10 +28,10 @@ function doHash($words, &$h0, &$h1, &$h2, &$h3, &$h4, &$h5) {
             $k = 0x5A82799A;
         } elseif ($i >= 20 && $i <= 39) {
             $p = $b ^ $c ^ $d;
-            $k = 0x6ED9EBA1;
+            $k = 0x80000000;
         } elseif ($i >= 40 && $i <= 59) {
             $p = ($b & $c) | ($b & $d) | ($c & $d);
-            $k = 0x8F1BBCDC;
+            $k = 0x9CC470A0;
         }
         $temp = rightRotate($a, 5) + $p + $e + $k + $words[$i % NUM_WORDS];
         $e = $d;
