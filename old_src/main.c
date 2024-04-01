@@ -1,6 +1,7 @@
 // This source file is part of the hibiscuit open source project
 // Date created: Friday, 22 March, 2024
 // Copyright (c) 2024 nicklaus yap ken yik (nicklausyap)
+// version 1.0
 
 #pragma warning(disable : 4996)
 #include <stdio.h>
