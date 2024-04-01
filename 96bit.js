@@ -23,10 +23,10 @@ function doHash(words, h) {
             k = 0x5A82799A;
         } else if (i < 40) {
             p = b ^ c ^ d;
-            k = 0x6ED9EBA1;
+            k = 0x80000000;
         } else if (i < 60) {
             p = (b & c) | (b & d) | (c & d);
-            k = 0x8F1BBCDC;
+            k = 0x9CC470A0;
         }
         temp = (rightRotate(a, 5) + p + e + k + words[i % 16]) >>> 0;
         e = d;
@@ -75,5 +75,5 @@ function breakInto512BitChunks(inputString) {
 }
 
 // Below is an example input
-const inputString = "He knew it was going to be a bad day when he saw mountain lions roaming the streets.Italy is my favorite country; in fact, I plan to spend two weeks there next year.";
+const inputString = "pie";
 breakInto512BitChunks(inputString);
