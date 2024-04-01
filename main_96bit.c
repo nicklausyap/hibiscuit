@@ -31,10 +31,10 @@ void doHash(unsigned int words[], unsigned int *h0, unsigned int *h1, unsigned i
             k = 0x5A82799A;
         } else if (i >= 20 && i <= 39) {
             p = b ^ c ^ d;
-            k = 0x6ED9EBA1;
+            k = 0x80000000;
         } else if (i >= 40 && i <= 59) {
             p = (b & c) | (b & d) | (c & d);
-            k = 0x8F1BBCDC;
+            k = 0x9CC470A0;
         }
         temp = rightRotate(a, 5) + p + e + k + words[i % 16];
         e = d;
@@ -105,7 +105,7 @@ void breakInto512BitChunks(unsigned char inputString[]) {
 
 
 int main() {
-    unsigned char inputString[] = "He knew it was going to be a bad day when he saw mountain lions roaming the streets.Italy is my favorite country; in fact, I plan to spend two weeks there next year.";
+    unsigned char inputString[] = "Hello";
     breakInto512BitChunks(inputString);
     return 0;
 }
