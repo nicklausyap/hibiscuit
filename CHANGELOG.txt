@@ -10,6 +10,9 @@
 -The breakInto512BitChunks function implementation is also changed
 -The initial value of h3 which previously is same as h5 has been replaced with a new value
 
+### Fixed
+-Change k value to correct value
+
 ## [1.0] - 24-Mar-2024
 ### Added
 -Initial release
