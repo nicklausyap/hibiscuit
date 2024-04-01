@@ -1,0 +1,15 @@
+## [1.1] - 01-Apr-2024
+### Added
+-php implementation of hibiscuit for 96-bit hash
+-javascript implementation of hibiscuit for 96-bit hash
+
+### Changed
+-rightRotate function parameter now used unsigned int instead of uint32_t
+-doHash function parameter now used unsigned int instead of uint32_t
+-breakIntoWords function parameter now used unsigned int instead of uint32_t. const char* is also changed to unsigned char in the function parameter
+-The breakInto512BitChunks function implementation is also changed
+-The initial value of h3 which previously is same as h5 has been replaced with a new value
+
+## [1.0] - 24-Mar-2024
+### Added
+-Initial release
